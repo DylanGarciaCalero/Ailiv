@@ -1,0 +1,1980 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'adelle_sans_cyrregular';
+    src: url('../fonts/adelle-sans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/adelle-sans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bilingual_serif_fontregular';
+    src: url('../fonts/bilingual_serif_font-webfont.woff2') format('woff2'),
+         url('../fonts/bilingual_serif_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: adelle_sans, sans-serif;
+    color: #00372b;
+}
+
+/* HOME */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.nav--side__navbar {
+    display: none;
+}
+
+.nav--side {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav--side a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav--side p {
+    margin: auto;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav--side .counter {
+    color: black;
+    background-color: white;
+    margin: auto;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 2rem;
+    line-height: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+.nav--side__innerflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__hamburger {
+    height: 1.8rem;
+    width: 1.8rem;
+    padding-right: 0.5rem;
+}
+
+.nav--side__winkelmandje {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.25rem;
+    height: 2.5rem;
+    background-color: #00372b;
+    border-radius: 0.5rem;
+}
+
+.nav--side__winkelmandje:hover {
+    background-color:#00b62f;
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav--side__logo img {
+    height: 5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav--top {
+    padding-bottom: 1rem;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+    margin-bottom: 0;
+}
+
+.nav--top a {
+    text-decoration: none;
+    color: #00372b;
+}
+
+.nav--top a:hover {
+    color: green;
+}
+
+.nav--bottom {
+    display: none;
+    justify-content: flex-end;  
+}
+
+.header__welcome {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__image {
+    position: relative;
+    text-align: center;
+}
+
+.header__image img {
+    width: 90%;
+    max-width: 25rem;
+}
+
+.background {
+    background-color:  #fff8e1;
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    top: 2rem;
+    z-index: -1;
+}
+
+.header__main {
+    padding: 2rem;
+    background-color: #fff8e1;
+}
+
+.header__main h1 {
+    color: #c11462;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+}
+
+.header__main--maintext {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.header__main--image img {
+    width: 100%;
+}
+
+.header__sub {
+    padding: 1rem;
+    text-align: center;
+}
+
+.header__sub p {
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+.header__sub h1 {
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    font-size: 2rem; 
+    letter-spacing: 0.1rem;
+    color: #93c683;
+}
+
+.header__sub img {
+    width: 0.6rem;
+}
+
+.header__sub--link {
+    margin-top: 0.5rem;
+    border: solid 0.1rem #c131a1;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+.header__sub--link:hover {
+    border: solid #c131a1 0.1rem ;
+    scale: 105%;
+}
+
+.header__sub a {
+    text-decoration: none;
+    color: #c131a1;
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header__sub--maintext {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    max-width: 30rem;
+    margin: auto;
+}
+
+.main__innerflex {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.main__1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.main__1 h1 {
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main__1 p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.main__fleximages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__fleximages .main__flex1,
+.main__fleximages .main__flex2,
+.main__fleximages .main__flex3 {
+    width: 40%;
+    height: 18rem;
+}
+
+
+.main__fleximages img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 5px 10px #fff8e1;
+}
+
+.main__fleximages h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    color: #ce1462;
+}
+
+.main__fleximages a {
+    text-decoration: none;
+}
+
+.main__fleximages a:hover > h2 {
+    scale: 105%;
+    color: #800f3e;
+}
+
+.main__artikels {
+    display: flex;
+    flex-direction: column;
+}
+
+.artikel1__flex {
+    display: flex;
+    flex-direction: column;
+    color: #d3f4da;
+    background-color: #00372b ;
+    margin: 1rem 0;
+}
+
+.artikel1__flex img {
+    width: 100%;
+    max-width: 60rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+.artikel1__flex p {
+    line-height: 1.5rem;
+}
+
+.artikel1__flex .bottomtext {
+    padding-bottom: 3rem
+}
+
+.artikel1__flex h1 {
+    padding-top: 1rem;
+    text-align: center;
+    color: #93c683;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.artikel1__flex p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.artikel1__flex a  {
+    text-decoration: none;
+    border: solid 0.1rem #93c68359;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #93c683;
+}
+
+.artikel1__flex a:hover {
+    border: solid 0.1rem #93c683;
+}
+
+.sub__artikels {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.sub__artikels h2 {
+    text-align: center;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels p {
+    text-align: center;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.sub__artikels ul {
+    padding: 1rem;
+}
+
+.boeket__opties {
+    background-image: url(https://uploads-ssl.webflow.com/5f5248794bbeccf44d459b82/5f5b9409e1c2efee29307007_drawing-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13rem;
+    background-size: 100%;
+    margin: auto;
+}
+
+.sub__artikels li {
+    line-height: 1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #00372b;
+    padding: 1rem;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.footer__nav a {
+    text-decoration: none;
+}
+
+.footer__nav li:hover {
+    scale: 105%;
+    border-bottom: solid rgba(255, 255, 255, 0.541) 0.1rem;
+}
+
+.footer__nav li {
+    font-size: 0.8rem;
+    list-style: none;
+    line-height: 1.5rem;
+    color: #fff8e1;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    border-bottom: solid rgba(255, 255, 255, 0.075) 0.1rem;
+}
+
+.contact__footer {
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact__footer a {
+    text-decoration: none;
+}
+
+.contact__footer p {
+    color: #fff8e1;
+    border: solid #fff8e13d 0.1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    max-width: 10rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact__footer p:hover {
+    scale: 105%;
+    border: solid #fff8e1 0.1rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    color: #fff8e1;
+}
+
+.bottom__footer ul{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom__footer a {
+    text-decoration: none;
+    color: white;
+    border-bottom: solid rgba(255, 255, 255, 0.103) 0.1rem;
+}
+
+.bottom__footer a:hover {
+    border-bottom: solid rgb(255, 255, 255) 0.1rem;
+    scale: 105%;
+}
+
+.deFormatie {
+    font-weight: 700;
+}
+
+.bottom__footer li {
+    list-style: none;
+    font-size: 0.6rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+/* WEBSHOP PAGINA */
+
+.sub__artikels--webshop {
+    padding: 2rem;
+    text-align: center;
+}
+
+.boeket__opties--webshop {
+    background-image: url(https://uploads-ssl.webflow.com/5f5248794bbeccf44d459b82/5f5b9409e1c2efee29307007_drawing-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13rem;
+    background-size: 100%;
+    margin: auto;
+}
+
+.sub__artikels--webshop li {
+    line-height: 1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.sub__artikels--webshop h2 {
+    text-align: center;
+    color:#c11462;
+    padding-bottom: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--webshop p {
+    text-align: center;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.sub__artikels--webshop ul {
+    padding: 1rem;
+}
+
+.flexfooter {
+    max-width: 66.6rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*GEPSERONALISEERD-BLOEMWERK*/
+
+.sub__artikels--bloemwerk {
+    padding: 2rem;
+    text-align: center;
+}
+
+.boeket__opties--bloemwerk {
+    background-image: url(https://uploads-ssl.webflow.com/5f5248794bbeccf44d459b82/5f5b9409e1c2efee29307007_drawing-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13rem;
+    background-size: 100%;
+    margin: auto;
+}
+
+.sub__artikels--bloemwerk li {
+    line-height: 1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.sub__artikels--bloemwerk h2 {
+    text-align: center;
+    color:#93c683;
+    padding-bottom: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--bloemwerk p {
+    text-align: center;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.sub__artikels--bloemwerk ul {
+    padding: 1rem;
+}
+.header__main--bloemwerk {
+    padding: 2rem;
+    background-color: #fff8e1;
+    margin-left: 1rem;
+}
+
+.header__main--bloemwerk h1 {
+    color: #c11462;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+}
+.header__main--bloemwerk__image {
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: #fff8e1;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.header__main--bloemwerk__image img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+}
+
+.header__main--maintext--bloemwerk {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.innertext--bloemwerk__underHeader {
+    padding: 1rem;
+}
+
+.innertext--bloemwerk__underHeader p {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.sub__artikels--bloemwerk__voorbeelden {
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 1rem 0;
+}
+
+.sub__artikels--bloemwerk__voorbeelden h2 {
+    text-align: center;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--bloemwerk__voorbeelden p {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.sub__artikels--bloemwerk__flexImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub__artikels--bloemwerk__flexImages div {
+    overflow: hidden;
+    height: 15rem;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 2rem;
+    box-shadow: 5px 10px #fff8e1;
+}
+
+.sub__artikels--bloemwerk__flexImages img {
+    height: 15rem;
+    object-fit: cover;
+    width: 100%;
+    min-width: 100%;
+}
+.sub__artikels--bloemwerk__interesse {
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 1rem 0;
+}
+
+.sub__artikels--bloemwerk__interesse h2 {
+    text-align: center;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--bloemwerk__interesse p {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.contactformulier--wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.contactformulier {
+    text-align: center;
+    background-color: #00372b;
+}
+
+.contactformulier input {
+    height: 1.8rem;
+    border: solid #00372b 0.1rem;
+    border-radius: 0.5rem;
+    background-color: #93c683;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+}
+
+.contactformulier p {
+    color:#d3f4da;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.contactformulier h3 {
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: #93c683;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.sub__contactformulier {
+    text-align: center;
+    background-color: #00372b;
+    color: #93c683;
+}
+
+.sub__contactformulier h2 {
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;     
+}
+
+.sub__contactformulier p {
+    font-size: 0.9rem;
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.sub__contactformulier a {
+    text-decoration: none;
+    color:#00b62e ;
+    border-bottom: #00b62e36 solid 0.1rem;
+}
+
+.sub__contactformulier a:hover {
+    border-bottom: #00b62e solid 0.1rem;
+}
+
+/*SEIZOENSDECORATIE*/
+
+.sub__artikels--seizoen {
+    padding: 2rem;
+    text-align: center;
+}
+
+.boeket__opties--seizoen {
+    background-image: url(https://uploads-ssl.webflow.com/5f5248794bbeccf44d459b82/5f5b9409e1c2efee29307007_drawing-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13rem;
+    background-size: 100%;
+    margin: auto;
+}
+
+.sub__artikels--seizoen li {
+    line-height: 1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.sub__artikels--seizoen h2 {
+    text-align: center;
+    color:#93c683;
+    padding-bottom: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--seizoen p {
+    text-align: center;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.sub__artikels--seizoen ul {
+    padding: 1rem;
+}
+.header__main--seizoen {
+    padding: 2rem;
+    background-color: #fff8e1;
+    margin-left: 1rem;
+}
+
+.header__main--seizoen h1 {
+    color: #c11462;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+}
+.header__main--seizoen__image {
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: #fff8e1;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.header__main--seizoen__image img {
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+}
+
+.header__main--maintext--seizoen {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.seizoen__underHeader {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.seizoen__underHeader h2 {
+    text-align: left;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.seizoen__underHeader h3 {
+    text-align: left;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.seizoen__underHeader p {
+    text-align: left;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.seizoen__underHeader ul {
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.seizoen__underHeader li {
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.main__seizoenen {
+    padding: 1rem;
+}
+
+.flex__kerst {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innerflex__kerst {
+    width: 49%;
+    margin: 0 auto;
+}
+
+.innerflex__kerst img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.innerflex__seizoenen{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.main__seizoenen h3 {
+    text-align: left;
+    color: #93c683;
+    padding-bottom: 0;
+    font-size: 1.7rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.main__seizoenen img {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.main__seizoenen p {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #97a793ec;
+    padding-bottom: 0.5rem;
+}
+
+.sub__artikels--seizoen__voorbeelden {
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 1rem 0;
+}
+
+.sub__artikels--seizoen__voorbeelden h2 {
+    text-align: center;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--seizoen__voorbeelden p {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.sub__artikels--seizoen__flexImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    margin: 1rem auto;
+}
+
+.sub__artikels--seizoen__flexImages div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    box-shadow: 5px 10px #fff8e1;
+}
+
+.sub__artikels--seizoen__flexImages img {
+    object-fit: cover;
+    height: 18rem;
+    width: 100%;
+}
+.sub__artikels--seizoen__interesse {
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 1rem 0;
+}
+
+.sub__artikels--seizoen__interesse h2 {
+    text-align: center;
+    color: #93c683;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sub__artikels--seizoen__interesse p {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/*CHECKOUT*/
+
+.overzicht {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    background-color: #f4f4f4 ;
+    margin-top: 1.5rem;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.flex--label {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    margin: auto;
+}
+
+.flex--label select {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.flex--label label {
+    font-size: 1rem;
+}
+
+.flex--label {
+    margin: 1rem;
+}
+
+.boeket--form__text p,
+.boeket--form__text h2 {
+    margin: 1rem;
+}
+
+input.aantal {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem
+}
+
+.innerflex--input {
+    display: flex;
+}
+
+.innerflex--input a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.boeket--form__text {
+    max-width: 50rem;
+    padding: 2rem 0;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.boeket--form__text h2 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: #93c683;
+}
+
+.flex--contactformulier {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+}
+
+.flex--contactformulier label {
+    color: white;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.flex--contactformulier input {
+    width: auto;
+}
+
+.contact--text--input input {
+    height: 5rem;
+}
+
+.flex--contactformulier div {
+    display: flex;
+    flex-direction: column;
+}
+
+.innerflex--input button {
+    font-size: 0.6rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #00372b;
+    color: white;
+}
+
+.innerflex--label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.overzicht h3 {
+    color: #93c683;
+    font-size: 1rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    padding-left: 1rem;
+    padding: 1rem;
+}
+
+.overzicht {
+    padding: 1rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+}
+
+.overzicht--titel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border: solid 0.1rem rgba(0, 0, 0, 0.144);
+    background-color: white;
+}
+
+.innerflex__checkout--adres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overzicht input {
+    height: 2rem;
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.overzicht label {
+    text-transform: uppercase;
+}
+
+.overzicht--submit  {
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem 2rem 0 0;
+    cursor: pointer;
+    background-color: #00372b;
+    color: white;
+}
+
+.form--land {
+    height: 2rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+.overzicht--submit:hover {
+    background-color: #93c683;
+    transition: background-color 0.2s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.innerflex__checkout--adres input {
+    max-width: 100%;
+}
+
+.form--postcode,
+.form--huisnummer {
+    width: 3rem;
+    text-align: center;
+}
+
+.anoniem {
+    display: flex;
+    align-items: center;
+}
+.innerflex__checkout--adres label {
+    max-width: 40%;    
+}
+
+.overzicht--lijst {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-bottom: solid 0.1rem rgba(0, 0, 0, 0.144);
+    border-left: solid 0.1rem rgba(0, 0, 0, 0.144);
+    border-right: solid 0.1rem rgba(0, 0, 0, 0.144);
+    background-color: white;
+}
+
+.overzicht--lijst p {
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.anoniem {
+    display:flex;
+    padding-top: 0.5rem;
+}
+
+.anoniem p {
+    padding-left: 0.5rem;    
+}
+
+.overzicht__bestelbon {
+    margin-bottom: 2rem;
+}
+
+.vereist {
+    color: red;
+    padding: 0.5rem
+}
+
+#webshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexbox--webshop {
+    width: 100%;
+    text-align: center;
+}
+
+.flexbox--webshop h3 {
+    font-size: 1.6rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.flexbox--webshop p {
+    font-size: 1.6rem;
+}
+
+.flexbox--webshop a {
+    text-decoration: none;
+}
+
+.flexbox--webshop img {
+    width: 80%;
+}
+
+.innerflex--webshop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.boeket--type {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 50rem;
+    margin: 1rem auto;
+    border-bottom: solid #c11462 0.1rem;
+}
+
+.innerboeket--type {
+    width: 15rem;
+    max-width: 100%;
+    margin: auto;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.boeket--type img {
+    padding-bottom: 2rem;
+    width: 30rem;
+    max-width: 100%;
+}
+
+.boeket--type h1 {
+    font-size: 2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: #c11462;
+}
+
+.boeket--type p {
+    font-size: 1.5rem;
+    color: #c11462;
+}
+
+#toggle--nav {
+    display: none;
+}
+
+.toggle--nav {
+    position: relative;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+.toggle--navbar {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+
+.toggle--navbar li {
+    list-style: none;
+    padding: 0.3rem;
+    color:#00b62f;
+}
+
+.toggle--navbar a {
+    text-decoration: none;
+}
+
+#toggle--winkel {
+    display: none;
+}
+
+.toggle--winkel {
+    position: relative;
+    height: 100vh;
+    width: 30rem;
+    max-width: 100%;
+    margin: 0.5rem 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-radius: 2rem 0 0;
+}
+
+.toggle--background {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.close--winkel {
+    color: white;
+    background-color: #00372b;
+    position: absolute;
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    top: 0;
+    right: 0;
+}
+
+.afrekenen {
+    position: absolute;
+    width: 3rem;
+    right: 50%;
+    bottom: 3rem;
+}
+
+.afrekenen--input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    color: white;
+    background-color: #00372b;
+    width: 5rem;
+    height: 3rem;
+}
+
+.afrekenen--input:hover {
+    cursor: pointer;
+    background-color: #00b62f;
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.close--winkel:hover {
+    cursor: pointer;
+    background-color: #00b62f;
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.inner--winkelmandje {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: solid 0.2rem;
+    font-family: bilingual_serif_fontregular, sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    color: #c11462;
+}
+
+.inner--winkelmandje h2 {
+    font-size: 1.2rem;
+}
+
+.contactformulier--button {
+    width: 5rem;
+    margin: auto;
+    background-color: #00372b;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    height: 2rem;
+}
+
+@media(min-width: 30rem){
+
+    .toggle--navbar li {
+        list-style: none;
+        padding: 0.5rem;
+        color:#00b62f;
+    }
+
+    .nav--side__innerflex {
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav--top {
+        max-width: 25rem;
+    }
+
+    .nav--side__logo img {
+        height: 7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .header__main--image {
+        text-align: center;
+    }
+
+    .header__main--image img {
+        max-width: 30rem;
+    }
+
+    #webshop {
+        flex-direction: row;
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    .flexbox--webshop {
+        width: 33%;
+    }
+
+    .flexbox--webshop img {
+        box-shadow: 5px 10px #dff4d7;
+    }
+
+    .flexbox--webshop h3,
+    .flexbox--webshop p {
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .flex--label {
+        display: flex;
+        flex-direction: column;
+        max-width: 25rem;
+        margin: auto;
+    }
+}
+
+@media(min-width: 60rem) {
+
+    nav {
+        margin-bottom: 2rem;
+    }
+
+    .nav--side__navbar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    .nav--top {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .nav__hamburger {
+        display: none;
+    }
+
+    .nav--side__navbar li {
+        color: #00b62f;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding-right: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    li.home--active,
+    li.bloemwerk--active,
+    li.seizoen--active,
+    li.webshop--active {
+        color: black;
+    }
+
+    .nav--side__navbar a:hover > li {
+        opacity: 70%;
+    }
+
+    .nav--side__logo img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .header__welcome {
+        flex-direction: row-reverse;
+    }
+
+    .header__main--image  {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .header__sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .main__innerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+
+    .header__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__image img {
+        width: 22rem;
+        padding: 1rem;
+        margin: -5rem 2rem;
+    }
+
+    .nav--side {
+        width: 90%;
+        max-width: 80rem;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .nav--side__logo {
+        width: 100%;
+    }
+
+    .nav--side__navbar {
+        max-width: 70rem;
+    }
+
+    .header__welcome {
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    .header__main--maintext{
+        width: 80%;
+    }
+
+    .header__sub--maintext {
+        margin: 0;
+    }
+
+    .nav--side__innerflex {
+        width: 100%;
+    }
+
+    .background {
+        top: 0;
+        height: 100%;
+    }
+
+    .header__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .main__1 {
+        margin: 2rem 0;
+    }
+
+    .main__fleximages {
+        max-width: 65rem;
+        margin: auto;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+    }
+
+    .main__fleximages h2 {
+        font-size: 1.2rem;
+    }
+
+    .main__fleximages .main__flex1,
+    .main__fleximages .main__flex2,
+    .main__fleximages .main__flex3 {
+        width: 32%;
+    }
+
+
+    .main__fleximages .main__flex1 img,
+    .main__fleximages .main__flex2 img,
+    .main__fleximages .main__flex3 img {
+        object-fit: cover;
+        height: 20rem;
+    }
+
+    .artikel1__flex {
+        max-width: 80rem;
+        margin: auto;
+        flex-direction: row;
+        background-color: #00372b;
+    }
+
+    .artikel1__flex img {
+        max-height: 25rem;
+        width: auto;
+    }
+
+    .artikel1__flex--text {
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    .sub__artikels,
+    .sub__artikels--bloemwerk,
+    .sub__artikels--webshop,
+    .sub__artikels--seizoen {
+        max-width: 80rem;
+        display: flex;
+        flex-direction: row;
+        margin: 2rem auto;
+    }
+
+    .sub__artikels div,
+    .sub__artikels--bloemwerk div,
+    .sub__artikels--webshop div,
+    .sub__artikels--seizoen div {
+        width: 40%;
+        padding-left: 5rem;
+    }
+
+    .sub__artikels p {
+        font-size: 1.2rem;
+    }
+
+    .sub__artikels h2 {
+        font-size: 2rem;
+    }
+
+    .boeket__opties {
+        scale: 160%;
+    }
+
+    .flexfooter {
+        flex-direction: row;
+    }
+
+    .footer__nav {
+        width: 70%;
+    }
+
+    .footer__nav li {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+
+    .bottom__footer {
+        max-width: 66.6rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1rem;
+    }
+
+    .bottom__footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+    }
+    
+    .bottom__footer div ul {
+        align-items: flex-start;
+    }
+
+    .contact__footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__nav {
+        padding-top: 0;
+    }
+
+    .contact__footer {
+        margin-top: 0;
+    }
+
+    .contact__footer a {
+        padding: 0.2rem;
+    }
+
+    .copyright {
+        padding-left: 0;
+    }
+
+    .sub__artikels--bloemwerk__flexImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 80rem;
+        margin: auto;
+    }
+    
+    .sub__artikels--bloemwerk__flexImages div {
+        overflow: hidden;
+        width: 20%;
+        height: 18rem;
+        margin: 1rem;
+        box-shadow: 5px 10px #fff8e1;
+    }
+    
+    .sub__artikels--bloemwerk__flexImages img {
+        object-fit: cover;
+        height: 18rem;
+        width: 100%;
+    }
+
+    .header__main--bloemwerk__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        background-color: #fff8e1 ;
+        height: 25rem;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    .header__main--bloemwerk h1,
+    .header__main h1 {
+        font-size: 3rem;
+    }
+
+    .header__main--bloemwerk__image {
+        width: 50%;
+        height: 20rem;
+    }
+
+    .header__main--bloemwerk__image img {
+        width: 25rem;
+        height: 25rem;
+        margin-top: -5rem;
+        margin-right: 1rem;
+        object-fit: contain;
+    }
+
+    .header__main--bloemwerk {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .innertext--bloemwerk__underHeader {
+        max-width: 80rem;
+        margin: 1rem auto;
+        padding-left: 5rem;
+    }
+
+    /* */
+
+    .header__main--seizoen__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #fff8e1 ;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    .header__main--seizoen__image {
+        width: 50%;
+        height: 25rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__main--seizoen__image img {
+        width: 30rem;
+        height: 30rem;
+        object-fit: contain;
+        margin-top: -5rem;
+    }
+
+    .header__main--seizoen {
+        width: 30%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__main--seizoen h1 {
+        font-size: 3rem;
+    }
+
+    .header__main--seizoen p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .seizoen__underHeader {
+        max-width: 80rem;
+        margin: 1rem auto;
+        padding-left: 10rem;
+    }
+
+    .main__seizoenen {
+        max-width: 78rem;
+        margin: 1rem auto;
+        margin-top: 0;
+        padding: 1rem;
+        background-color:  #fff8e1;
+    }
+
+    .main__seizoenen img {
+        margin-top: 0rem;
+        padding-bottom: 0;
+        width: 50%;
+    }
+
+    .flex__kerst {
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    .innerflex__kerst {
+        width: 32.6%;
+        margin-top: 0.5rem;
+    }
+
+    .innerflex__kerst img {
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .innerflex__seizoenen:nth-child(odd) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .innerflex__seizoenen:nth-child(even) {
+        margin-top: -12rem;
+        margin-left: 2rem;
+    }
+
+    .innerflex__seizoenen:nth-child(even) > .innerflex__seizoenen--text {
+        display: flex;
+        margin-bottom: 0;
+        margin-top: auto;
+        text-align-last: right;
+        border-left: solid 0.1rem rgba(0, 0, 0, 0.295);
+        border-bottom: solid 0.1rem rgba(0, 0, 0, 0.295);
+    }
+
+    .innerflex__seizoenen:nth-child(odd) > .innerflex__seizoenen--text {
+        border-right: solid 0.1rem rgba(0, 0, 0, 0.295);
+        border-bottom: solid 0.1rem rgba(0, 0, 0, 0.295);
+    }
+
+    .innerflex__seizoenen {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 1rem;
+    }
+
+    .innerflex__seizoenen--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5rem;
+        background-color: white;
+        width: 10rem;
+    }
+
+    .innerflex__seizoenen--text h3, 
+    .innerflex__seizoenen--text p {
+        color: #00372b;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .contactformulier--wrapper {
+        flex-direction: row;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    .contactformulier {
+        width: 50%;
+        padding: 2rem 0;
+    }
+
+    .contactformulier--button:hover {
+        background-color: #93c683;
+        transition: background-color 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .contactformulier h3 {
+        padding-top: 0;
+    }
+
+    .sub__contactformulier {
+        width: 50%;
+        padding: 2rem 0;
+        border-left: solid rgba(0, 0, 0, 0.295) 0.1rem;
+    }
+
+    .flexbox--webshop h3,
+    .flexbox--webshop p {
+        font-size: 1.7rem;
+    }
+
+    .innerboeket--type {
+        text-align: center;
+    }
+
+    .toggle--nav {
+        display: none;
+    }
+
+    .flex--label {
+        display: flex;
+        flex-direction: column;
+        max-width: 25rem;
+        margin: auto;
+    }
+}
